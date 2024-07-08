@@ -21,10 +21,10 @@ public class Main {
         Hogwarts.printStudent(hufflepuff1);
         Hogwarts.printStudent(slytherin1);
 
-        Gryffindor.compareStudentsGryffindor(gryffindor1, gryffindor2);
-        Hufflepuff.compareStudentsHufflepuff(hufflepuff1, hufflepuff2);
-        Ravenclaw.compareStudentsRavenclaw(ravenclaw1, ravenclaw3);
-        Slytherin.compareStudentsSlytherin(slytherin1, slytherin2);
-        Hogwarts.compareStudents(gryffindor1, slytherin1);
+        gryffindor1.compareStudentsGryffindor(gryffindor2);
+        hufflepuff1.compareStudentsHufflepuff(hufflepuff2);
+        ravenclaw1.compareStudentsRavenclaw(ravenclaw3);
+        slytherin1.compareStudentsSlytherin(slytherin2);
+        slytherin1.compareStudents(gryffindor1);
     }
 }

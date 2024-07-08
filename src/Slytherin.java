@@ -64,13 +64,14 @@ public class Slytherin extends Hogwarts {
                 ". Жажда власти - " + lustForPower;
     }
 
-    public static void compareStudentsSlytherin(Slytherin slytherin1, Slytherin slytherin2) {
-        int sum1 = slytherin1.getCunning() + slytherin1.getAmbition() + slytherin1.getResourcefulness() + slytherin1.getLustForPower();
-        int sum2 = slytherin2.getCunning() + slytherin2.getAmbition() + slytherin2.getResourcefulness() + slytherin2.getLustForPower();
+    public void compareStudentsSlytherin(Slytherin slytherin) {
+        int sum1 = this.getCunning() + this.getAmbition() + this.getResourcefulness() + this.getLustForPower();
+        int sum2 = slytherin.getCunning() + slytherin.getAmbition() + slytherin.getResourcefulness() + slytherin.getLustForPower();
         if (sum1 > sum2) {
-            System.out.println(slytherin1.getName() + " лучший Слизеринец, чем " + slytherin2.getName());
+            System.out.println(this.getName() + " лучший Слизеринец, чем " + slytherin.getName());
         } else {
-            System.out.println(slytherin2.getName() + " лучший Слизеринец, чем " + slytherin1.getName());
+            System.out.println(slytherin.getName() + " лучший Слизеринец, чем " + this.getName());
         }
     }
 }
+

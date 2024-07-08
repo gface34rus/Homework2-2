@@ -39,13 +39,13 @@ public class Hogwarts {
                 "Расстояние трансгрессии - " + transgressionDistance;
     }
 
-    public static void compareStudents(Hogwarts hogwarts1, Hogwarts hogwarts2) {
-        int sum1 = hogwarts1.getMagicPower() + hogwarts1.getTransgressionDistance();
-        int sum2 = hogwarts2.getMagicPower() + hogwarts2.getTransgressionDistance();
+    public void compareStudents(Hogwarts hogwarts) {
+        int sum1 = this.getMagicPower() + this.getTransgressionDistance();
+        int sum2 = hogwarts.getMagicPower() + hogwarts.getTransgressionDistance();
         if (sum1 > sum2) {
-            System.out.println(hogwarts1.getName() + " обладает бОльшей мощностью магии, чем " + hogwarts2.getName());
+            System.out.println(this.getName() + " обладает бОльшей мощностью магии, чем " + hogwarts.getName());
         } else {
-            System.out.println(hogwarts2.getName() + " обладает бОльшей мощностью магии, чем " + hogwarts1.getName());
+            System.out.println(hogwarts.getName() + " обладает бОльшей мощностью магии, чем " + this.getName());
         }
     }
 
